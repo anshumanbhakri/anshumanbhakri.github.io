@@ -1,4 +1,4 @@
-# Anshuman Bhakri
+
 
 ![Anshuman Bhakri](AnshumanBhakriWebsitePic.jpg)
 
