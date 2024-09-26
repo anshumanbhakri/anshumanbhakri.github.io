@@ -60,15 +60,54 @@
 
         /* Image styling - rectangular and bigger */
         img {
-            width: 350px; /* Increased the width to make the image bigger */
-            height: 350px; /* Set a fixed height to make it rectangular */
-            border-radius: 10px; /* Removed circular styling for rectangular shape */
-            margin-right: 40px; /* Same margin as the text to make spacing equal */
+            width: 300px;
+            height: auto; /* Removed fixed height for better scaling on smaller screens */
+            border-radius: 10px;
+            margin-right: 40px;
         }
 
         p {
             font-size: 24px;
             max-width: 600px;
+        }
+
+        /* Media query for smartphones and smaller devices */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+
+            main {
+                width: 100%;
+                padding: 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            img {
+                width: 80%; /* Make the image responsive for smaller screens */
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 10px 0;
+            }
         }
     </style>
 </head>
