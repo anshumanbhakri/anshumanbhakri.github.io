@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anshuman Bhakri - Website</title>
+    <title>Anshuman Bhakri - Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            background-color: white; /* White background for everything else */
+            background-color: white;
             color: #333;
+            display: flex;
         }
 
         /* Left sidebar for navigation */
         nav {
             width: 20%;
-            background-color: black; /* Black background for the tabs */
+            background-color: grey;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -42,58 +42,51 @@
         /* Right section for profile picture and about me */
         main {
             width: 80%;
-            padding: 20px;
+            padding: 40px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
         }
 
-        /* About Me section styling */
-        .about-me {
-            width: 60%;
+        header {
+            background-color: #708090; /* Background color */
+            color: white;
+            padding: 20px 0;
         }
 
-        .about-me h1 {
-            font-size: 42px; /* Larger font size */
-            margin-bottom: 20px;
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
-        .about-me p {
-            font-size: 22px; /* Larger font for the about section */
-            max-width: 800px;
-            line-height: 1.6;
-        }
-
-        /* Picture section */
-        .profile-picture {
-            width: 30%;
-        }
-
-        .profile-picture img {
-            width: 300px; /* Larger picture */
+        img {
+            width: 200px;
+            height: auto;
             border-radius: 50%;
+            margin-right: 40px;
         }
 
+        p {
+            font-size: 18px;
+            max-width: 600px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Navigation tabs on the left -->
     <nav>
+        <a href="index.html">About Me</a>
         <a href="research.html">Research</a>
         <a href="cv.html">CV</a>
         <a href="teaching.html">Teaching</a>
     </nav>
 
-    <!-- Main content with profile picture and about me -->
+    <!-- Main content (picture and about me text) -->
     <main>
-        <div class="about-me">
-            <h1>Anshuman Bhakri</h1>
-            <p>Hello! I am Anshuman Bhakri, a researcher in economics with expertise in auction theory and contract design. Welcome to my academic website where I showcase my research, CV, and teaching materials.</p>
-        </div>
-
-        <div class="profile-picture">
-            <img src="AnshumanBhakriWebsitePic.jpg" alt="Your Profile Picture">
+        <img src="AnshumanBhakriWebsitePic.jpg" alt="Your Profile Picture">
+        <div>
+            <h1>About Me</h1>
+            <p>Hello! I am Anshuman Bhakri, a researcher in economics specializing in auction theory and contract design. I have worked extensively on contract design in the renewable energy sector, focusing on improving procurement outcomes under uncertainty. Explore my research, CV, and teaching materials through the navigation links on the left.</p>
         </div>
     </main>
 
