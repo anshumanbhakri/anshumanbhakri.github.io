@@ -9,15 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
             display: flex;
+            background-color: white; /* White background for everything else */
+            color: #333;
         }
 
         /* Left sidebar for navigation */
         nav {
             width: 20%;
-            background-color: #333;
+            background-color: black; /* Black background for the tabs */
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -43,32 +43,37 @@
         main {
             width: 80%;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        header {
-            text-align: center;
-            background-color: #708090; /* Boston College maroon color */
-            color: white;
-            padding: 30px 0;
+        /* About Me section styling */
+        .about-me {
+            width: 60%;
+        }
+
+        .about-me h1 {
+            font-size: 42px; /* Larger font size */
             margin-bottom: 20px;
         }
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .about-me p {
+            font-size: 22px; /* Larger font for the about section */
+            max-width: 800px;
+            line-height: 1.6;
         }
 
-        header img {
-            width: 180px;
-            border-radius: 75%;
-            margin: 15px 0;
+        /* Picture section */
+        .profile-picture {
+            width: 30%;
         }
 
-        header p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 auto;
+        .profile-picture img {
+            width: 300px; /* Larger picture */
+            border-radius: 50%;
         }
+
     </style>
 </head>
 <body>
@@ -80,13 +85,16 @@
         <a href="teaching.html">Teaching</a>
     </nav>
 
-    <!-- Main content on the right (profile picture and about me) -->
+    <!-- Main content with profile picture and about me -->
     <main>
-        <header>
+        <div class="about-me">
             <h1>Anshuman Bhakri</h1>
-            <img src="AnshumanBhakriWebsitePic.jpg" alt="Your Profile Picture">
             <p>Hello! I am Anshuman Bhakri, a researcher in economics with expertise in auction theory and contract design. Welcome to my academic website where I showcase my research, CV, and teaching materials.</p>
-        </header>
+        </div>
+
+        <div class="profile-picture">
+            <img src="AnshumanBhakriWebsitePic.jpg" alt="Your Profile Picture">
+        </div>
     </main>
 
 </body>
