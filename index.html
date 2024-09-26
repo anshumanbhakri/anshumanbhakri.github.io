@@ -11,14 +11,46 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
         }
 
-        /* Header section with name, image, and description */
+        /* Left sidebar for navigation */
+        nav {
+            width: 20%;
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 0;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            padding-left: 20px;
+            transition: 0.3s;
+        }
+
+        /* Right section for profile picture and about me */
+        main {
+            width: 80%;
+            padding: 20px;
+        }
+
         header {
             text-align: center;
-            padding: 50px;
             background-color: #708090; /* Boston College maroon color */
             color: white;
+            padding: 30px 0;
+            margin-bottom: 20px;
         }
 
         header h1 {
@@ -27,9 +59,9 @@
         }
 
         header img {
-            width: 200px;
+            width: 180px;
             border-radius: 75%;
-            margin: 25px 0;
+            margin: 15px 0;
         }
 
         header p {
@@ -37,105 +69,25 @@
             max-width: 600px;
             margin: 0 auto;
         }
-
-        /* Navigation tabs */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            display: inline-block;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* Content section */
-        section {
-            padding: 50px;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        /* Left-align for project details */
-        .project {
-            text-align: left;
-            margin: 0 auto;
-            max-width: 800px;
-            margin-bottom: 40px;
-        }
-
-        .project h3 {
-            font-size: 24px;
-        }
-
-        .project p {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Header with name, picture, and description -->
-    <header>
-        <h1>Anshuman Bhakri</h1>
-        <img src="AnshumanBhakriWebsitePic.jpg" alt="Your Profile Picture">
-        <p>Hello! I am Anshuman Bhakri, a researcher in economics with expertise in auction theory and contract design. Welcome to my academic website where I showcase my research, CV, and teaching materials.</p>
-    </header>
-
-    <!-- Navigation tabs -->
+    <!-- Navigation tabs on the left -->
     <nav>
-        <a href="#main">Main</a>
-        <a href="#research">Research</a>
-        <a href="#cv">CV</a>
-        <a href="#teaching">Teaching</a>
+        <a href="research.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="teaching.html">Teaching</a>
     </nav>
 
-    <!-- Main Content Sections -->
-    <section id="main">
-        <h2>Main</h2>
-        <p>Welcome to my academic website! Here you will find information about my research, CV, and teaching.</p>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research</h2>
-        
-        <!-- Project 1 -->
-        <div class="project">
-            <h3><a href="https://github.com/AnshumanBhakri/project-1" target="_blank">Contract design in renewable energy auctions: Evidence from India</a></h3>
-            <p>The procurement of green energy in the presence of cost uncertainty leads to the non-deployment of projects if the contracts are not optimally designed. This paper proposes the contract design for the Indian solar energy procurement auctions to help achieve their green energy targets while minimizing procurement costs. I examine how the developers, facing uncertain costs, lead to non-deployment under incomplete contracts and suggest alternative designs to mitigate these issues. I develop a model that analyzes the firms' optimal bidding and deployment decisions under cost uncertainty, drawing on the data from the auctions and post-award deployment decisions. By recovering the cost distribution of the firms, I show how the contract design influences the procurement costs and deployment outcomes. The results show that the firms take the option of not deploying under certain high-probability cost scenarios, which leads to low deployment rates. The counterfactual analysis demonstrates that incentive contracts with optimal selective bid indexing and penalties can significantly improve deployment rates while keeping procurement costs low.</p>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project">
-            <h3><a href="https://github.com/AnshumanBhakri/project-2" target="_blank">How large are the cost savings from auctions vs feed-in tariffs: Evidence from Germany:</a></h3>
-            <p>In this project, we study the design of contracts for large-scale solar projects, focusing on how to incentivize timely deployment under cost uncertainties. The research incorporates data from Indian solar auctions and analyzes various contract structures, including penalty clauses.</p>
-        </div>
-
-    </section>
-
-    <section id="cv">
-        <h2>CV</h2>
-        <p>Download my latest CV <a href="your-cv-link.pdf" target="_blank">here</a>.</p>
-    </section>
-
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>Details about my teaching experience, courses, and materials will be available here.</p>
-    </section>
+    <!-- Main content on the right (profile picture and about me) -->
+    <main>
+        <header>
+            <h1>Anshuman Bhakri</h1>
+            <img src="AnshumanBhakriWebsitePic.jpg" alt="Your Profile Picture">
+            <p>Hello! I am Anshuman Bhakri, a researcher in economics with expertise in auction theory and contract design. Welcome to my academic website where I showcase my research, CV, and teaching materials.</p>
+        </header>
+    </main>
 
 </body>
 </html>
