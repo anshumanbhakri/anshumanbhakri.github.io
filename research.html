@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Anshuman Bhakri</title>
+    <title>Anshuman Bhakri - Research</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            background-color: white;
             color: #333;
+            display: flex;
         }
 
-        h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-align: center;
+        nav {
+            width: 20%;
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            box-sizing: border-box;
         }
 
-        .project {
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 0;
             text-align: left;
-            margin: 0 auto;
-            max-width: 800px;
-            margin-bottom: 40px;
+            font-size: 18px;
         }
 
-        .project h3 {
+        nav a:hover {
+            background-color: #555;
+            padding-left: 20px;
+            transition: 0.3s;
+        }
+
+        main {
+            width: 80%;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .research-project {
+            margin-bottom: 30px;
+        }
+
+        .research-project h2 {
             font-size: 24px;
+            margin-bottom: 10px;
         }
 
-        .project p {
+        .research-project p {
             font-size: 16px;
-            margin-bottom: 10px;
+        }
+
+        .research-project a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .research-project a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-
-      <!-- Navigation tabs on the left -->
+    <!-- Navigation tabs on the left -->
     <nav>
         <a href="index.html">About Me</a>
         <a href="research.html">Research</a>
@@ -47,20 +82,42 @@
         <a href="teaching.html">Teaching</a>
     </nav>
 
-    
-    <h2>Research</h2>
-    
-    <!-- Project 1 -->
-    <div class="project">
-        <h3><a href="https://github.com/AnshumanBhakri/project-1" target="_blank">Contract design in renewable energy auctions: Evidence from India</a></h3>
-        <p>The procurement of green energy in the presence of cost uncertainty leads to the non-deployment of projects if the contracts are not optimally designed. This paper proposes the contract design for the Indian solar energy procurement auctions to help achieve their green energy targets while minimizing procurement costs. I examine how the developers, facing uncertain costs, lead to non-deployment under incomplete contracts and suggest alternative designs to mitigate these issues.</p>
-    </div>
+    <!-- Research content -->
+    <main>
+        <h1>Research Projects</h1>
 
-    <!-- Project 2 -->
-    <div class="project">
-        <h3><a href="https://github.com/AnshumanBhakri/project-2" target="_blank">How large are the cost savings from auctions vs feed-in tariffs: Evidence from Germany</a></h3>
-        <p>In this project, we study the design of contracts for large-scale solar projects, focusing on how to incentivize timely deployment under cost uncertainties. The research incorporates data from Indian solar auctions and analyzes various contract structures, including penalty clauses.</p>
-    </div>
+        <!-- Project 1 -->
+        <div class="research-project">
+            <h2>Project 1: Contract Design in Renewable Energy Procurement Auctions</h2>
+            <p>
+                This research investigates how contract designs in the renewable energy sector influence procurement costs and deployment outcomes. 
+                By analyzing auction and post-award deployment data from the Indian solar energy sector, we assess the impact of bid indexing 
+                and penalties for non-deployment.
+            </p>
+            <a href="link-to-paper-1.pdf" target="_blank">Read the paper</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="research-project">
+            <h2>Project 2: Auctions under Uncertainty: A Model of Bidding and Deployment</h2>
+            <p>
+                This project develops a dynamic model of bidding in sequential auctions with uncertain post-award outcomes. 
+                The study focuses on how firms' private cost signals and uncertainty over future costs affect both bidding strategies and project deployment decisions.
+            </p>
+            <a href="link-to-paper-2.pdf" target="_blank">Read the paper</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="research-project">
+            <h2>Project 3: The Role of Penalties in Auction Design: Evidence from Solar Energy Auctions</h2>
+            <p>
+                This paper explores the role of penalties in auction design for renewable energy projects. We analyze how varying penalty structures 
+                influence bidding behavior and project completion rates in solar energy auctions.
+            </p>
+            <a href="link-to-paper-3.pdf" target="_blank">Read the paper</a>
+        </div>
+
+    </main>
 
 </body>
 </html>
