@@ -14,6 +14,7 @@
             display: flex;
         }
 
+        /* Navigation */
         nav {
             width: 20%;
             background-color: #333;
@@ -38,6 +39,7 @@
             transition: 0.3s;
         }
 
+        /* Main content */
         main {
             width: 80%;
             padding: 40px;
@@ -70,6 +72,41 @@
         .research-project a:hover {
             text-decoration: underline;
         }
+
+        /* Media query for smartphones and smaller devices */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+
+            main {
+                width: 100%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .research-project h2 {
+                font-size: 20px;
+            }
+
+            .research-project p {
+                font-size: 14px;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,7 +123,7 @@
     <main>
         <h1>Research</h1>
 
-        <!-- -->
+        <!-- Project 1 -->
         <div class="research-project">
             <h2>Contract Design in Renewable Energy Procurement Auctions</h2>
             <p>
@@ -97,7 +134,7 @@
             <a href="link-to-paper-1.pdf" target="_blank">Paper</a>
         </div>
 
-        <!-- -->
+        <!-- Project 2 -->
         <div class="research-project">
             <h2>How large are the cost savings from auctions vs feed-in tariffs: Evidence from Germany</h2>
             <p>
@@ -106,7 +143,6 @@
             </p>
             <a href="link-to-paper-2.pdf" target="_blank">Read the paper</a>
         </div>
-
 
     </main>
 
